@@ -1,67 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>//头文件
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>音乐播放器</title>
-    <link rel="stylesheet" href="./css/audio.css" />
+    <link rel="stylesheet" href="./sy2.css">
     
-  </head>
-  <body background="./img/bg0.png">
-    <!-- 上半部分 -->
+</head>
+<body background="xianhua.jpg">
     <div class="upper-container">
-      <!-- 唱片 -->
-      <div class="record-container">
-        <div class="record-bg">
-          <div class="record-img"></div>
+        <div class="record-container">
+            <div class="record-bg">
+                <div class="record-img rotate-play"></div>
+            </div>
         </div>
-      </div>
-      <!-- 歌曲信息 -->
-      <div class="introduction-container">
-        <div class="music-title">章宝炫</div>
+        <div class="introduction-container">
+        <div class="music-title">音乐名称</div>
         <div class="author-container">
-          作者：
-          <span class="author-name">25216950102</span>
+            作者：
+            <span class="author-name">章宝炫</span>
         </div>
-      </div>
+        </div>
     </div>
-
-    <!-- 下半部分 -->
     <div class="bottom-container">
         <audio id="audioTag"></audio>
-      <!-- 进度条 -->
-      <div class="progress"></div>
-      <!-- 控制按钮 -->
-      <div class="controls">
-        <div class="time-container">
-          <span class="played-time">00:00</span>
-          &nbsp;/&nbsp;
-          <span class="audio-time">00:00</span>
+        <div class="progress">
+            <div class="progress-played">
+
+            </div>
         </div>
-        <div class="center-button">
-          <!-- 播放模式 -->
-          <div class="playMode center-icon"></div>
-          <!-- 上一首 -->
-          <div class="beforeMusic center-icon"></div>
-          <!-- 暂停 -->
-          <div class="playPause center-icon"></div>
-          <!-- 下一首 -->
-          <div class="nextMusic center-icon"></div>
-          <!-- 音量调节 -->
-          <div class="volumn center-icon"></div>
-          <!-- 音量滑动 -->
-          <input type="range" value="70" min="0" max="100" step="1" id="volumn-togger" />
+        <div class="controls">
+            <div class="time-container">
+                <span class="played-time">00:00</span>
+                &nbsp;/&nbsp;
+                <span class="audio-time">00:00</span>
+            </div>
+            <div class="center-button">
+                <div class="playMode center-icon"></div>
+                <div class="beforeMusic center-icon"></div>
+                <div class="playPause center-icon icon-play"></div>
+                <div class="nextMusic center-icon"></div>
+                <div class="volumn center-icon"></div>
+                <input type="range" value="70" min="0" max="100" step="1" id="volumn-togger"/> 
+            </div>
+            <div class="right-button">
+                <div class="MV right-icon"></div>
+                <div class="speed">1.0X</div>
+                <div class="list right-icon"></div>
+            </div>
         </div>
-        <div class="right-button">
-          <!-- MV -->
-          <div class="MV right-icon"></div>
-          <!-- 倍速 -->
-          <div class="speed">1.0X</div>
-          <!-- 列表 -->
-          <div class="list right-icon"></div>
-        </div>
-      </div>
     </div>
-  </body>
+</body>
 </html>
-<script src="./js/audio.js"></script>
+
+<script src="./shiyan2.js"></script>
